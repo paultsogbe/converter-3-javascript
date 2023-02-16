@@ -2,19 +2,19 @@ let text = document.getElementById("text");
 let rest = document.getElementById("result");
 
 // CETTE PARTIE PERMET DE CALCULER LES BINAIRES EN DÉCIMAL
-var number = "";
-var numberI = 0;
+let number = "";
+let numberI = 0;
 function BinToDec() {
   number = "";
   numberI = 0;
-  var ch = "";
-  var pos = 1;
+  let ch = "";
+  let pos = 1;
   number = text.value;
   numberI = parseInt(number);
 
   if (!isNaN(numberI)) {
     numberI = 0;
-    for (var i = number.length - 1; i >= 0; i--) {
+    for (let i = number.length - 1; i >= 0; i--) {
       ch = number.charAt(i);
       numberI = numberI + parseInt(ch) * pos;
       pos = pos * 2;
@@ -26,7 +26,7 @@ function BinToDec() {
 
 // CETTE PARTIE PERMET DE CALCULER LES BINAIRES EN HEXADÉCIMAL
 function BinToHex() {
-  var pos = 1,
+  let pos = 1,
     toto = "",
     ch = "";
   let total = " ";
