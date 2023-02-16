@@ -19,7 +19,7 @@ function BinToDec() {
       numberI = numberI + parseInt(ch) * pos;
       pos = pos * 2;
     }
-    // CETTE METHODE DE  ( rest.innerHTML )DE FAIRE push BINAIRE to DÉCIMAL';
+    // CETTE METHODE DE  ( rest.innerHTML ) PERMET DE FAIRE push BINAIRE to DÉCIMAL';
     rest.innerHTML = numberI;
   } else rest.innerHTML = "Something happe with the input";
 }
@@ -57,7 +57,7 @@ function BinToHex() {
       pos = 1;
       numberI = 0;
     }
-    // CETTE METHODE DE   (rest.innerHTML )DE FAIRE push BINAIRE to HEXADÉCIMAL;
+    // CETTE METHODE DE   (rest.innerHTML ) PERMET DE FAIRE push BINAIRE to HEXADÉCIMAL;
     rest.innerHTML = total;
   } else rest.innerHTML = "Something happe with the input";
 }
@@ -101,7 +101,7 @@ function DecToHex() {
         }
         numberI = parseInt(numberI / 16);
       }
-      // CETTE METHODE DE  ( rest.innerHTML) DE FAIRE push DÉCIMAL to HEXADÉCIMAL;
+      // CETTE METHODE DE  ( rest.innerHTML) PERMET DE FAIRE push DÉCIMAL to HEXADÉCIMAL;
       rest.innerHTML = total;
     } else rest.innerHTML = "0";
   } else rest.innerHTML = "Something happe with the input";
@@ -127,7 +127,7 @@ function HexToDec() {
     numberI = numberI + parseInt(ch) * Math.pow(16, pos);
     pos++;
   }
-  // CETTE METHODE DE   rest.innerHTML DE FAIRE push HEXADÉCIMAL to DÉCIMAL;
+  // CETTE METHODE DE   (rest.innerHTML) PERMET DE FAIRE push HEXADÉCIMAL to DÉCIMAL;
   rest.innerHTML = numberI;
 }
 
@@ -159,6 +159,6 @@ function HexToBin() {
     else if (ch == "0") total = "0000";
     numberI = total + numberI;
   }
-  // CETTE METHODE DE   (rest.innerHTML )DE FAIRE push HEXADÉCIMAL to BINAIRE';
+  // CETTE METHODE DE   (rest.innerHTML ) PERMET DE FAIRE push HEXADÉCIMAL to BINAIRE';
   rest.innerHTML = numberI;
 }
