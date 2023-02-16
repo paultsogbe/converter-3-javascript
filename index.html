@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Binary to decimal</title>
+</head>
+<body>
+    <div class="container my-5 bar" >
+            <h1>CONVERT NUMBERS</h1>
+    </div>
+
+    <div class="container mt-5 txt">
+         <!-- ICI J'AI CIBLÉ TOUTES LES BASES ET ÉLÉMENTS AVEC (TEXT) -->
+        <div class="row text-center">
+            <label class="text-white col-sm-6 col-form-label" >IN YOUR NUMBER</label>
+            <div class="col-sm-6">
+                <input type="text" id="text" class="form-control">
+            </div>
+        </div> 
+    </div>
+   
+    <div class=" container text-center btn01">
+        <div class="row row-cols-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <button class="btn btn-primary btn-lg" onclick="BinToDec()">BINARY TO DECIMAL</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-dark btn-lg" onclick="BinToHex()">BINARY TO HEXADECIMAL</button>   
+            </div>
+            <div class="col">
+                <button class="btn btn-primary btn-lg" onclick="DecToBin()">DECIMAL TO BINARY</button>        
+            </div>
+            <div class="col">
+                <button class="btn btn-dark btn-lg" onclick="DecToHex()">DECIMAL TO HEXADECIMAL</button>          
+            </div>
+            <div class="col">
+                <button class="btn btn-primary btn-lg" onclick="HexToDec()">HEXADECIMAL TO DECIMAL</button>           
+            </div>
+            <div class="col">
+                <button class="btn btn-dark btn-lg" onclick="HexToBin()">HEXADECIMAL TO BINARY</button>
+            </div>
+        </div>
+        
+    </div>
+     <!-- ICI J'AI CIBLÉ  ÉLÉMENT NUMBER AVEC (result) -->
+    <div class="result container text-center py-5">
+        <h3 class="text-white" id="result">NUMBER=</h3>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
